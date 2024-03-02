@@ -71,7 +71,7 @@
 
 <style type="text/css">
 
-* { box-sizing: border-box; } body {margin: 0;}#iz9o{background-color:grey;}.hamburger1{display:none;}.bar1{display:block;width:25px;height:3px;margin:5px auto;-webkit-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out;background-color:#101010;}@keyframes fadeEffect{from{opacity:0;}to{opacity:1;}}@media only screen and (max-width: 992px){.hamburger1{display:block;cursor:pointer;}.hamburger1.active .bar1:nth-child(2){opacity:0;}.hamburger1.active .bar1:nth-child(1){transform:translateY(8px) rotate(45deg);}.hamburger1.active .bar1:nth-child(3){transform:translateY(-8px) rotate(-45deg);}}
+* { box-sizing: border-box; } body {margin: 0;}#iz9o{background-color:grey;}.hamburger1{display:none;}.bar1{display:block;width:25px;height:3px;margin:5px auto;-webkit-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out;background-color:#101010;}.swiper{height:80vh;}.swiper-slide{height:80vh !important;}.swiper-slide-content{bottom:15%;}@keyframes fadeEffect{from{opacity:0;}to{opacity:1;}}@media only screen and (max-width: 992px){.hamburger1{display:block;cursor:pointer;}.hamburger1.active .bar1:nth-child(2){opacity:0;}.hamburger1.active .bar1:nth-child(1){transform:translateY(8px) rotate(45deg);}.hamburger1.active .bar1:nth-child(3){transform:translateY(-8px) rotate(-45deg);}}
 
 </style>
 
@@ -103,10 +103,43 @@
     </div>
    </nav>
   </div>
+  <div id="i8gkm">
+   <div class="swiper w-100 testimonial-swiper-one my-4 border">
+    <div class="swiper-wrapper">
+     <div class="swiper-slide position-relative">
+      <img src="https://media.istockphoto.com/id/948363084/video/long-exposure-background-loop.jpg?s=640x640&amp;k=20&amp;c=CAGs7xoh75C4M5GhN0IYsSRzTW8SHwAZn1xJWi_c8EE=" alt="swiper-image" class="swiper-image w-100 h-100">
+      <div class="position-absolute w-100 text-white d-flex justify-content-center align-items-center flex-column swiper-slide-content">
+       <p class="fs-5 mb-2">First Slide</p><span>Some representative placeholder content for the first slide.</span>
+      </div>
+     </div>
+     <div class="swiper-slide position-relative">
+      <img src="https://media.istockphoto.com/id/948363084/video/long-exposure-background-loop.jpg?s=640x640&amp;k=20&amp;c=CAGs7xoh75C4M5GhN0IYsSRzTW8SHwAZn1xJWi_c8EE=" alt="swiper-image" class="swiper-image w-100 h-100">
+      <div class="position-absolute w-100 text-white d-flex justify-content-center align-items-center flex-column swiper-slide-content">
+       <p class="fs-5 mb-2">Second Slide</p><span>Some representative placeholder content for the second slide.</span>
+      </div>
+     </div>
+     <div class="swiper-slide position-relative">
+      <img src="https://media.istockphoto.com/id/948363084/video/long-exposure-background-loop.jpg?s=640x640&amp;k=20&amp;c=CAGs7xoh75C4M5GhN0IYsSRzTW8SHwAZn1xJWi_c8EE=" alt="swiper-image" class="swiper-image w-100 h-100">
+      <div class="position-absolute w-100 text-white d-flex justify-content-center align-items-center flex-column swiper-slide-content">
+       <p class="fs-5 mb-2">Third Slide</p><span>Some representative placeholder content for the Third slide.</span>
+      </div>
+     </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+   </div>
+  </div>
   <script>var items = document.querySelectorAll('#iep7k');
           for (var i = 0, len = items.length; i < len; i++) {
             (function(){
 const t=this.querySelectorAll(".hamburger1"),e=this.querySelectorAll(".navbar-collapse");for(let n=0;n<t.length;n++)t[n].addEventListener("click",function(){t[n].classList.toggle("active"),e[n].classList.toggle("show")})
+}.bind(items[i]))();
+          }
+          var items = document.querySelectorAll('#i8gkm');
+          for (var i = 0, len = items.length; i < len; i++) {
+            (function(){
+if(!document.querySelector('link[href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"]')){const t=document.createElement("link");t.rel="stylesheet",t.href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css",document.head.appendChild(t)}if(document.querySelector('script[src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"]'))new Swiper(".testimonial-swiper-one",{slidesPerView:1,spaceBetween:30,loop:!0,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},pagination:{el:".swiper-pagination",type:"bullets"},autoplay:!0});else{const t=document.createElement("script");t.src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js",document.head.appendChild(t),t.onload=function(){new Swiper(".testimonial-swiper-one",{slidesPerView:1,spaceBetween:30,loop:!0,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},pagination:{el:".swiper-pagination",type:"bullets"},autoplay:!0})}}
 }.bind(items[i]))();
           }</script>
  </body>
